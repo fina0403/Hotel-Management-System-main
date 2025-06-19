@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cookie&family=Poppins:wght@600&display=swap');
+
+:root {
+    --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%), 0 8px 16px rgb(13 0 77 / 8%);
+    --bg-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.621);
+}
+*::-webkit-scrollbar{
+    width: .4rem;
+}
+*::-webkit-scrollbar-track{
+    background: rgb(6, 6, 44);
+}
+*::-webkit-scrollbar-thumb{
+    background: #0040ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* text-shadow: var(--bg-text-shadow); */
+}
+
+nav{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.279);
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    /* box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.386); */
+}
+
+nav ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    color: black;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+ul li{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li:hover::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    /* display: none; */
+    transition: ease 2s;
+}
+
+ul li a:hover{
+    color: black;
+}
+
+.logo {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+.logo .bluebirdlogo {
+    height: 100%;
+}
+
+.logo p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(66, 68, 74);
+    text-shadow: var(--bg-text-shadow);
+}
+
+#firstsection{
+    height: 100vh;
+    background-color: rgba(175, 175, 222, 0.511);
+    width: 100%;
+    /* z-index: 2000; */
+}
+
+#firstsection .carousel-inner{
+    width: 100%;
+    height: 100vh;
+    /* padding: 0 50px; */
+}
+#firstsection .carousel-inner::after{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(178, 170, 236, 0.533);
+}
+
+#firstsection .carousel-item{
+    overflow: hidden;
+}
+
+#firstsection .carousel-item img{
+    width: 100%;
+    height: 100vh;
+}
+
+
+#firstsection .welcomeline{
+    position: absolute; 
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#firstsection .welcometag{
+    font-size: 110px;
+    font-weight: bold;
+    font-family: 'Cookie', cursive;
+    letter-spacing: 2px;
+    line-height: 100px;
+    padding: 5px;
+    /* text gradiant */
+    background: -webkit-linear-gradient(317deg, rgba(0, 60, 255, 0.81) 0%, rgb(255 0 123) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.sevices{
+    display: flex;
+}
+
+.services i{
+    color:white;
+    margin: 7px;
+}
+
+.bookbtn{
+   margin: 10px;
+}
+
+/* roombookcss */
+
+#guestdetailpanel{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.558);
+    position: fixed;
+    z-index: 10000;
+}
+
+.logoutbtn{
+    height: 20px;
+    width: 200px;
+    background-color: rgba(216, 19, 19, 0.804);
+}
+
+#thirdsection{
+    height: 80vh;
+    width: 100%;
+    /* background-color: black; */
+}
+
+.facility{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.facility .box{
+    height: 100%;
+    width: 310px;
+    border: 2px solid white;
+    background-color: #0040ff;
+}
+
+.facility .box h2{
+    text-align: center;
+    position: relative;
+    top: 80%;
+    color: white;
+    background-color: #0000005e;
+}
+
+.box:nth-child(1){
+    background-image: url(../image/swimingpool.jpg);
+    background-size: cover;
+}
+.box:nth-child(2){
+    background-image: url(../image/spa.jpg);
+    background-size: cover;
+}
+.box:nth-child(3){
+    background-image: url(../image/food.jpg);
+    background-size: cover;
+}
+.box:nth-child(4){
+    background-image: url(../image/gym.jpg);
+    background-size: cover;
+}
+.box:nth-child(5){
+    background-image: url(../image/heli.jpg);
+    background-size: cover
+}
+
+#contactus{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 100px;
+}
+
+#contactus .social{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contactus i{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#contactus .createdby{
+    color: white;
+}
+
+/* responsive stuff */
+
+@media(max-width: 30rem){
+    nav{
+        justify-content: center;
+        position: relative;
+        background-color: #96a8f88c;
+    }
+    nav ul{
+        display: none;
+    }
+    #firstsection{
+        height: 50vh;
+        text-align: center;
+    }
+    #firstsection .carousel-inner{
+        height: 50vh;
+    }
+    #firstsection .carousel-inner::after{
+        height: 50vh;
+    }
+    #firstsection .carousel-item img{
+        height: 50vh;
+    }
+    #firstsection .welcomeline{
+        height: 50vh;
+        
+    }
+    #firstsection .welcometag{
+        text-align: center;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    #secondsection{
+        height: auto;
+    }
+    #secondsection{
+        height: 240vh;
+    }
+    #secondsection img{
+        display: none;
+    }
+    .ourroom{
+        top: 30px;
+        height: auto;
+    }
+    .roomselect{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .roomselect .roombox{
+        width: 75%;
+    }
+
+
+    #thirdsection{
+        height: 100vh;
+    }
+    .facility{
+        height: 70%;
+        flex-wrap: wrap;
+    }
+    .facility .box{
+        margin: 0;
+        padding: 0;
+        height: 55%;
+        width: 50%; 
+    }
+
+    .facility .box h2{
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+    
+    .box:nth-child(5){
+        display: none;
+    }
+
+    #contactus{
+        padding: 0 30px;
+    }
+}
+
+#secondsection{
+    height: 100vh;
+}
+
+#secondsection img{
+    /* background-size: cover; */
+    height: 100vh;
+    width: 100%;
+    filter: blur(20px);
+    position: absolute;
+    /* -webkit-backdrop-filter: blur(30px);  */
+    z-index: -2;
+}
+.ourroom{
+    position: relative;
+    top: 90px;
+    height: 400px;
+    width: 100%;
+    /* background-color: #0040ff; */
+}
+
+.head{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* --- Homestay cards container --- */
+.roomselect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* --- Each homestay card --- */
+.roombox {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.roombox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* --- Content inside each card --- */
+.roomdata {
+  text-align: center;
+}
+
+.roomdata h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0a0d2d;
+  margin-bottom: 15px;
+}
+
+.roomdata p {
+  color: #333;
+  margin: 5px 0;
+}
+
+.roomdata button {
+  margin-top: 15px;
+  background: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.roomdata button:hover {
+  background: #0056b3;
+}
+
+/* --- Guest Reservation Modal --- */
+#guestdetailpanel {
+  position: fixed;
+  z-index: 10000;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(50,55,65,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.guestdetailpanelform {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.15);
+  padding: 32px 36px 24px 36px;
+  min-width: 360px;
+  max-width: 410px;
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+}
+
+.guestdetailpanelform .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.guestdetailpanelform .head h3 {
+  margin: 0; font-size: 1.4em; font-weight: bold; letter-spacing: 1px;
+}
+.guestdetailpanelform .fa-circle-xmark {
+  color: #444; font-size: 1.7em; cursor: pointer; transition: color 0.15s;
+}
+.guestdetailpanelform .fa-circle-xmark:hover {
+  color: #d32f2f;
+}
+
+.guestdetailpanelform .middle {
+  display: flex; flex-direction: column; gap: 8px;
+}
+
+.guestdetailpanelform h4 {
+  font-size: 1.05em; margin-bottom: 6px; color: #42527b;
+  letter-spacing: 1px; font-weight: bold;
+}
+
+.guestinfo, .reservationinfo {
+  margin-bottom: 4px;
+}
+
+.guestdetailpanelform input[type="text"],
+.guestdetailpanelform input[type="email"],
+.guestdetailpanelform input[type="date"],
+.guestdetailpanelform select {
+  width: 100%;
+  padding: 9px 13px;
+  margin-bottom: 7px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 7px;
+  font-size: 1em;
+  background: #f9f9fa;
+  transition: border-color 0.2s;
+}
+
+.guestdetailpanelform input[type="text"]:focus,
+.guestdetailpanelform input[type="email"]:focus,
+.guestdetailpanelform input[type="date"]:focus,
+.guestdetailpanelform select:focus {
+  border-color: #4263eb;
+  outline: none;
+}
+
+.guestdetailpanelform .line {
+  height: 1.5px; background: #ececec; width: 100%; margin: 12px 0 8px 0;
+}
+
+.guestdetailpanelform .datesection {
+  display: flex; flex-direction: row; gap: 10px;
+}
+
+.guestdetailpanelform .datesection span {
+  display: flex; flex-direction: column; flex: 1;
+}
+
+.guestdetailpanelform label {
+  font-size: 0.99em; margin-bottom: 2px; color: #777;
+}
+
+.guestdetailpanelform .footer {
+  display: flex; justify-content: flex-end; margin-top: 5px;
+}
+.guestdetailpanelform .footer button {
+  min-width: 110px;
+  font-size: 1.09em;
+  padding: 8px 0;
+  border-radius: 7px;
+  background: #04b79d;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 1px 2px #ddd;
+  transition: background 0.15s, box-shadow 0.12s;
+  cursor: pointer;
+}
+.guestdetailpanelform .footer button:hover {
+  background: #01806d;
+  box-shadow: 0 2px 8px #b6ede5;
+}
+
+@media (max-width: 600px) {
+  .guestdetailpanelform {
+    padding: 14px 7px;
+    min-width: unset; max-width: 99vw;
+  }
+}

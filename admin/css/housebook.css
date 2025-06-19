@@ -1,0 +1,119 @@
+body {
+    background: #f6f8fc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: left;
+    font-size: 2.3rem;
+    margin: 36px 0 20px 270px;
+    color: #223;
+    letter-spacing: 0.5px;
+}
+
+.table-container {
+    margin-left: 270px;
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,30,84,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 0.85em 1em;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: linear-gradient(90deg, #3c51bf 80%, #457eff 100%);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background: #f2f7ff;
+}
+
+.badge {
+    padding: 4px 14px;
+    border-radius: 18px;
+    font-size: 0.96em;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.badge.notconfirm {
+    background: #c7a007;
+}
+
+.badge.approved {
+    background: #10b982;
+}
+
+.badge.cancelled {
+    background: #ff6363;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 16px;
+    margin-right: 6px;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.97em;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.15s, color 0.15s;
+    cursor: pointer;
+}
+
+.btn-confirm {
+    background: #478af5;
+    color: #fff;
+}
+
+.btn-confirm:hover {
+    background: #365ac9;
+}
+
+.btn-cancel {
+    background: #ff6a6a;
+    color: #fff;
+}
+
+.btn-cancel:hover {
+    background: #e13a3a;
+}
+
+.muted {
+    color: #bbb;
+    font-size: 1.1em;
+}
+
+@media (max-width: 900px) {
+    .table-container {
+        margin-left: 0;
+        width: 98vw;
+        overflow-x: auto;
+    }
+    table {
+        font-size: 0.97em;
+    }
+}
